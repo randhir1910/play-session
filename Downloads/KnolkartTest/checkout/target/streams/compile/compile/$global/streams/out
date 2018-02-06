@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/knoldus/Downloads/KnolkartTest/checkout/src/main/scala/checkout.scala:3:7: Class checkout differs only in case from Checkout. Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mtrait checkout {[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

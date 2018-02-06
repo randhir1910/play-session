@@ -1,0 +1,16 @@
+[0m[[0m[0minfo[0m] [0m[0mscalastyle using config /home/knoldus/Downloads/Knolkart/scalastyle-config.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mStarting scalastyle[0m
+[0m[[0m[0mdebug[0m] [0m[0mstart file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/Const/Constant.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mend file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/Const/Constant.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mstart file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/module/Item.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mend file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/module/Item.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mstart file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/module/Products.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mend file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/module/Products.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mstart file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/service/ProductItem.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mend file /home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/service/ProductItem.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Processed 4 file(s)[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Found 0 errors[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Found 0 warnings[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Found 0 infos[0m
+[0m[[0m[0minfo[0m] [0m[0mscalastyle Finished in 4 ms[0m
+[0m[[0m[32msuccess[0m] [0m[0mcreated output: /home/knoldus/Downloads/Knolkart/inventory/target[0m
