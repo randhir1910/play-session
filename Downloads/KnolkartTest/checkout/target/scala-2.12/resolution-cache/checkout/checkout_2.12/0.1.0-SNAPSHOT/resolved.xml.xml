@@ -4,7 +4,7 @@
 		module="checkout_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180207132418"
+		publication="20180207132628"
 	>
 		<description>
 		checkout
@@ -34,8 +34,6 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="inventory" name="inventory_2.12" rev="0.1.0-SNAPSHOT" conf="compile->default(compile)"/>
-		<dependency org="org.scoverage" name="scalac-scoverage-runtime_2.12" rev="1.3.1" conf="compile->default(compile)"/>
-		<dependency org="org.scoverage" name="scalac-scoverage-plugin_2.12" rev="1.3.1" conf="scoveragePlugin->default(compile)"/>
 		<dependency org="log4j" name="log4j" rev="1.2.17" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.4" conf="test->default(compile)"/>
 	</dependencies>

@@ -1,5 +1,10 @@
-[0m[[0m[0minfo[0m] [0m[0m[info] Cleaning datadir [/home/knoldus/Downloads/KnolkartTest/inventory/target/scala-2.12/scoverage-data][0m
-[0m[[0m[0minfo[0m] [0m[0m[info] Beginning coverage instrumentation[0m
-[0m[[0m[0minfo[0m] [0m[0m[info] Instrumentation completed [29 statements][0m
-[0m[[0m[0minfo[0m] [0m[0m[info] Wrote instrumentation file [/home/knoldus/Downloads/KnolkartTest/inventory/target/scala-2.12/scoverage-data/scoverage.coverage.xml][0m
-[0m[[0m[0minfo[0m] [0m[0m[info] Will write measurement data to [/home/knoldus/Downloads/KnolkartTest/inventory/target/scala-2.12/scoverage-data][0m
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/KnolkartTest/inventory/src/main/scala/com/knoldus/service/ProductItem.scala:9:106: value item5 is not a member of object com.knoldus.Const.Constant[0m
+[0m[[0m[31merror[0m] [0m[0m  val itemDb: List[Products] = List(Constant.item1,Constant.item2,Constant.item3,Constant.item4,Constant.item5,Constant.item6,Constant.item7)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/KnolkartTest/inventory/src/main/scala/com/knoldus/service/ProductItem.scala:9:121: value item6 is not a member of object com.knoldus.Const.Constant[0m
+[0m[[0m[31merror[0m] [0m[0m  val itemDb: List[Products] = List(Constant.item1,Constant.item2,Constant.item3,Constant.item4,Constant.item5,Constant.item6,Constant.item7)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/KnolkartTest/inventory/src/main/scala/com/knoldus/service/ProductItem.scala:9:136: value item7 is not a member of object com.knoldus.Const.Constant[0m
+[0m[[0m[31merror[0m] [0m[0m  val itemDb: List[Products] = List(Constant.item1,Constant.item2,Constant.item3,Constant.item4,Constant.item5,Constant.item6,Constant.item7)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

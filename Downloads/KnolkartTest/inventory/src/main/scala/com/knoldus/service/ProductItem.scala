@@ -6,7 +6,7 @@ import com.knoldus.module.{Item, Products}
 
 class ProductItem extends Item {
 
-  val itemDb: List[Products] = List(Constant.item1,Constant.item2,Constant.item3,Constant.item4,Constant.item5,Constant.item6,Constant.item1)
+  val itemDb: List[Products] = List(Constant.item1, Constant.item2, Constant.item3, Constant.item4)
 
   override def search(itemName: String): List[Products] = {
 
