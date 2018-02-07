@@ -5,7 +5,7 @@
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT [compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.4 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master], scala-tool=[default, master(*), compile, runtime(*), runtime, optional, optional(default), compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.4 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, master(*), compile, runtime(*), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.4
 [debug] 	found org.scala-lang#scala-library;2.12.4 in sbt-chain
 [debug] 	[2.12.4] org.scala-lang#scala-library;2.12.4
@@ -120,6 +120,11 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->master]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->master(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->compile(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [compile->default]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [compile->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [compile->compile]
@@ -168,14 +173,45 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->default(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->default]
+[debug] sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.12;3.0.4 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
+[debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.12;3.0.4
+[debug] 	found org.scalatest#scalatest_2.12;3.0.4 in sbt-chain
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->default(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scalactic#scalactic_2.12;3.0.4 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scalactic#scalactic_2.12;3.0.4
+[debug] 	found org.scalactic#scalactic_2.12;3.0.4 in sbt-chain
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->master]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test->default]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test->compile]
@@ -192,6 +228,40 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->inventory#inventory_2.12;0.1.0-SNAPSHOT [test->default(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->account#account_2.12;0.1.0-SNAPSHOT [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->account#account_2.12;0.1.0-SNAPSHOT [test->default(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.4 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[master(*), compile, runtime(*), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.4
+[debug] 	found org.scala-lang#scala-reflect;2.12.4 in sbt-chain
+[debug] 	[2.12.4] org.scala-lang#scala-reflect;2.12.4
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4
+[debug] 	found org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 in sbt-chain
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.5 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.5
+[debug] 	found org.scala-lang.modules#scala-xml_2.12;1.0.5 in sbt-chain
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT [provided]
 [debug] resolving dependencies for configuration 'optional'
@@ -411,14 +481,39 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->default(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->compile(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->default]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->default(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test->master]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test->default]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test->compile]
@@ -435,20 +530,69 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->inventory#inventory_2.12;0.1.0-SNAPSHOT [test->default(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->account#account_2.12;0.1.0-SNAPSHOT [test->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->account#account_2.12;0.1.0-SNAPSHOT [test->default(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test->master]
 [debug] == resolving dependencies for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT [optional]
 [debug] == resolving dependencies for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT [provided]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->default]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->master(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->master(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->default(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->compile(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->default]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->default(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalatest#scalatest_2.12;3.0.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scalactic#scalactic_2.12;3.0.4 [test-internal->master]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test-internal->default]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test-internal->runtime]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [test-internal->compile]
@@ -465,6 +609,30 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->inventory#inventory_2.12;0.1.0-SNAPSHOT [test-internal->default(compile)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->account#account_2.12;0.1.0-SNAPSHOT [test-internal->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->account#account_2.12;0.1.0-SNAPSHOT [test-internal->default(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [test-internal->master]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->runtime(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->master(compile)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->runtime]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->compile]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->compile(*)]
+[debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.5 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
 [debug] == resolving dependencies for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'pom'
@@ -497,10 +665,6 @@
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->master]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [scala-tool->master(*)]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.4 {scala-tool=[master(*), compile, runtime(*), runtime, compile(*), master]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.4
-[debug] 	found org.scala-lang#scala-reflect;2.12.4 in sbt-chain
-[debug] 	[2.12.4] org.scala-lang#scala-reflect;2.12.4
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [scala-tool->compile]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [scala-tool->runtime(*)]
 [debug] == resolving dependencies apiresouces#apiresouces$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-reflect;2.12.4 [scala-tool->compile]
@@ -533,22 +697,26 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.5!jline.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar(src)
-[debug] 	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(src)
-[debug] :: resolution report :: resolve 175ms :: artifacts dl 12ms
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT compile produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-compile.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT runtime produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-runtime.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT test produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-test.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT provided produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-provided.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT optional produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-optional.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT compile-internal produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-compile-internal.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT runtime-internal produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-runtime-internal.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT test-internal produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-test-internal.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT plugin produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-plugin.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT pom produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-pom.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT scala-tool produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-scala-tool.xml
-[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT scoveragePlugin produced in /home/knoldus/Downloads/Knolkart/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-scoveragePlugin.xml
-[debug] 	resolve done (175ms resolve - 12ms download)
+[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(src)
+[debug] :: resolution report :: resolve 115ms :: artifacts dl 16ms
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT compile produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-compile.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT runtime produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-runtime.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT test produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-test.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT provided produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-provided.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT optional produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-optional.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT compile-internal produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-compile-internal.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT runtime-internal produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-runtime-internal.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT test-internal produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-test-internal.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT plugin produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-plugin.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT pom produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-pom.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT scala-tool produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-scala-tool.xml
+[debug] 	report for apiresouces#apiresouces$sources;0.1.0-SNAPSHOT scoveragePlugin produced in /home/knoldus/Downloads/KnolkartTest/api-resources/target/scala-2.12/resolution-cache/reports/apiresouces-apiresouces$sources-scoveragePlugin.xml
+[debug] 	resolve done (115ms resolve - 16ms download)

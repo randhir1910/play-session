@@ -1,7 +1,6 @@
 package com.knoldus.controller
 
-import edu.knoldus.model.{UserInformation, user}
-import edu.knoldus.services.UserData
+import edu.knoldus.model.{UserData, UserInformation, user}
 import org.apache.log4j.Logger
 
 class account {

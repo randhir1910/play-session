@@ -1,4 +1,9 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/knoldus/Downloads/KnolkartTest/checkout/src/main/scala/checkout.scala:3:7: Class checkout differs only in case from Checkout. Such classes will overwrite one another on case-insensitive filesystems.[0m
-[0m[[0m[33mwarn[0m] [0m[0mtrait checkout {[0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Cleaning datadir [/home/knoldus/Downloads/KnolkartTest/checkout/target/scala-2.12/scoverage-data][0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Beginning coverage instrumentation[0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Instrumentation completed [7 statements][0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Wrote instrumentation file [/home/knoldus/Downloads/KnolkartTest/checkout/target/scala-2.12/scoverage-data/scoverage.coverage.xml][0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Will write measurement data to [/home/knoldus/Downloads/KnolkartTest/checkout/target/scala-2.12/scoverage-data][0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/knoldus/Downloads/KnolkartTest/checkout/src/main/scala/service/checkout.scala:3:7: Class service.checkout differs only in case from service.Checkout. Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mtrait checkout[0m
 [0m[[0m[33mwarn[0m] [0m[0m      ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

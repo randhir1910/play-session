@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/Knolkart/inventory/src/main/scala/com/knoldus/service/ProductItem.scala:6:19: illegal cyclic reference involving class ProductItem[0m
-[0m[[0m[31merror[0m] [0m[0mclass ProductItem extends ProductItem {[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Cleaning datadir [/home/knoldus/Downloads/KnolkartTest/inventory/target/scala-2.12/scoverage-data][0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Beginning coverage instrumentation[0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Instrumentation completed [29 statements][0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Wrote instrumentation file [/home/knoldus/Downloads/KnolkartTest/inventory/target/scala-2.12/scoverage-data/scoverage.coverage.xml][0m
+[0m[[0m[0minfo[0m] [0m[0m[info] Will write measurement data to [/home/knoldus/Downloads/KnolkartTest/inventory/target/scala-2.12/scoverage-data][0m
