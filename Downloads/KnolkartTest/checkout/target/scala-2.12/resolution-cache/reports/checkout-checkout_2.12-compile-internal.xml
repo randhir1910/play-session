@@ -7,10 +7,10 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, scoveragePlugin"
-		date="20180207132628"/>
+		date="20180209221044"/>
 	<dependencies>
 		<module organisation="inventory" name="inventory_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20180207132627" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20180209221042" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="checkout" name="checkout_2.12" conf="compile-internal, compile, provided, optional" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>

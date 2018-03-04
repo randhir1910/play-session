@@ -26,6 +26,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies account#account_2.12;0.1.0-SNAPSHOT->log4j#log4j;1.2.17 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for account#account_2.12;0.1.0-SNAPSHOT [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/knoldus/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for account#account_2.12;0.1.0-SNAPSHOT [compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies account#account_2.12;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.4 {scala-tool=[default, optional(default)]}[0m
@@ -112,7 +113,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-compiler;2.12.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/knoldus/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.3 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-compiler;2.12.4 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
@@ -835,16 +835,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 446ms :: artifacts dl 10ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 327ms :: artifacts dl 14ms[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for account#account_2.12;0.1.0-SNAPSHOT compile produced in /home/knoldus/Downloads/KnolkartTest/account/target/scala-2.12/resolution-cache/reports/account-account_2.12-compile.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for account#account_2.12;0.1.0-SNAPSHOT runtime produced in /home/knoldus/Downloads/KnolkartTest/account/target/scala-2.12/resolution-cache/reports/account-account_2.12-runtime.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for account#account_2.12;0.1.0-SNAPSHOT test produced in /home/knoldus/Downloads/KnolkartTest/account/target/scala-2.12/resolution-cache/reports/account-account_2.12-test.xml[0m
@@ -857,5 +857,5 @@
 [0m[[0m[0mdebug[0m] [0m[0m	report for account#account_2.12;0.1.0-SNAPSHOT pom produced in /home/knoldus/Downloads/KnolkartTest/account/target/scala-2.12/resolution-cache/reports/account-account_2.12-pom.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for account#account_2.12;0.1.0-SNAPSHOT scala-tool produced in /home/knoldus/Downloads/KnolkartTest/account/target/scala-2.12/resolution-cache/reports/account-account_2.12-scala-tool.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for account#account_2.12;0.1.0-SNAPSHOT scoveragePlugin produced in /home/knoldus/Downloads/KnolkartTest/account/target/scala-2.12/resolution-cache/reports/account-account_2.12-scoveragePlugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (446ms resolve - 10ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (327ms resolve - 14ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m

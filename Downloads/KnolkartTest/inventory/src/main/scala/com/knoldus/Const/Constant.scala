@@ -3,8 +3,8 @@ package com.knoldus.Const
 import com.knoldus.module.Products
 
 object Constant {
-  //scalastyle:off
 
+  //scalastyle:off
   val item1 = Products("Mobile", "one plus 5T", "OnePlus india", 33000, 4.1, 6)
 
   val item2 = Products("Mobile", "galaxy s8", " Samsung india", 53000, 4.2, 6)
