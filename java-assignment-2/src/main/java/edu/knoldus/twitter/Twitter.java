@@ -25,59 +25,83 @@ public class Twitter {
 			twitter.setOAuthConsumer(properties.getProperty("consumerKey"), properties.getProperty("consumerSecret"));
 			twitter.setOAuthAccessToken(new AccessToken(properties.getProperty("accessToken"), properties.getProperty("accessTokenSecret")));
 			query = new Query(hashTag);
+			query.setCount(100);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 	//get total number of tweets from hashTag
-	CompletableFuture<Integer> noOfTweets = CompletableFuture.supplyAsync(() -> {
-		Integer tweetsCount = 0;
-		try {
-			tweetsCount = twitter.search(query).getTweets().size();
-		} catch (TwitterException e) {
-			e.getMessage();
-		}
-		return tweetsCount;
-	});
+	public CompletableFuture<Integer> noOfTweets() {
+		return CompletableFuture.supplyAsync(() -> {
+			Integer tweetsCount = 0;
+			try {
+				//System.out.println(twitter.search(query).getTweets());
+				tweetsCount = twitter.search(query).getTweets().size();
+			} catch (TwitterException e) {
+				e.getMessage();
+			}
+			return tweetsCount;
+		}).thenApply(x -> {
+			System.out.println("total tweets" + x);
+			return x;
+		});
+	}
+
 
 	//average tweets per day
-	CompletableFuture<Double> averageTweetsPerDay = CompletableFuture.supplyAsync(() -> {
+	public CompletableFuture<Double> averageTweetsPerDay() {
 
-		Double averageTweets = 0.0;
-		try {
-			averageTweets = twitter.search(query).getTweets().size() / 7.0;
-		} catch (TwitterException e) {
-			e.getMessage();
-		}
-		return averageTweets;
-	});
+		return CompletableFuture.supplyAsync(() -> {
+
+			Double averageTweets = 0.0;
+			try {
+				averageTweets = twitter.search(query).getTweets().size() / 7.0;
+			} catch (TwitterException e) {
+				e.getMessage();
+			}
+			return averageTweets;
+		}).thenApply(x -> {
+			System.out.println("average tweets per day" + x);
+			return x;
+		});
+	}
 
 	//Average Like Count
-	CompletableFuture<Double> averageLikes = CompletableFuture.supplyAsync(() -> {
-		Double totalLike = 0.0;
-		try {
+	public CompletableFuture<Double> averageLikes() {
+		return CompletableFuture.supplyAsync(() -> {
+			Double averageLike = 0.0;
+			try {
 
-			List<Status> twitterStatus = twitter.search(query).getTweets();
-			Double twitterSize = twitterStatus.size() + 0.0;
-			totalLike = twitterStatus.parallelStream().map(tweets -> tweets.getFavoriteCount()).reduce((a, b) -> a + b).get() / twitterSize;
-		} catch (TwitterException te) {
-			te.getMessage();
-		}
-		return totalLike;
-	});
+				List<Status> twitterStatus = twitter.search(query).getTweets();
+				Double twitterSize = twitterStatus.size() + 0.0;
+				averageLike = twitterStatus.parallelStream().map(tweets -> tweets.getFavoriteCount()).reduce((a, b) -> a + b).get()/twitterSize;
+			} catch (TwitterException te) {
+				te.getMessage();
+			}
+			return averageLike;
+		}).thenApply(x -> {
+			System.out.println("average likes" + x);
+			return x;
+		});
+	}
 
 	//Average ReTweetCount
-	CompletableFuture<Double> averageReTweets = CompletableFuture.supplyAsync(() -> {
-		Double totalReTweet = 0.0;
-		try {
+	public CompletableFuture<Double> averageReTweets() {
+		return CompletableFuture.supplyAsync(() -> {
+			Double totalReTweet = 0.0;
+			try {
 
-			List<Status> twitterStatus = twitter.search(query).getTweets();
-			Double twitterSize = twitterStatus.size() + 0.0;
-			totalReTweet = twitterStatus.parallelStream().map(tweets -> tweets.getRetweetCount()).reduce((a, b) -> a + b).get() / twitterSize;
-		} catch (TwitterException te) {
-			te.getMessage();
-		}
-		return totalReTweet;
-	});
+				List<Status> twitterStatus = twitter.search(query).getTweets();
+				Double twitterSize = twitterStatus.size() + 0.0;
+				totalReTweet = twitterStatus.parallelStream().map(tweets -> tweets.getRetweetCount()).reduce((a, b) -> a + b).get() / twitterSize;
+			} catch (TwitterException te) {
+				te.getMessage();
+			}
+			return totalReTweet;
+		}).thenApply(x -> {
+			System.out.println("Average reTweets " + x);
+			return x;
+		});
+	}
 }

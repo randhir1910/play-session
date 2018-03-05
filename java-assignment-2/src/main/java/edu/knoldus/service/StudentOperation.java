@@ -23,13 +23,10 @@ public class StudentOperation {
 						.stream().map(student -> "hello" + student.getName())).collect(Collectors.toList());
 	}
 
-	public Optional<List<String>> getSubject(Integer id, List<ClassRoom> classRoomList) {
+	public List<Optional<List<String>>> getSubject(Integer id, List<ClassRoom> classRoomList) {
 		return classRoomList.stream()
 				.filter(classRoom -> classRoom.getStudentList().isPresent() && classRoom.getRoomId() == id)
 				.flatMap(classWithStudent -> classWithStudent.getStudentList().get()
-						.stream().filter(student -> student.getSubjectList().isPresent())
-						.map(student -> student.getSubjectList()))
-				.collect(Collectors.toList());
-
+						.stream().map(student -> student.getSubjectList())).collect(Collectors.toList());
 	}
 }
