@@ -3,26 +3,40 @@ package edu.knoldus.model;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * classRoom of student.
+ */
 public class ClassRoom {
 
-	public Integer getRoomId() {
+	/**
+	 * @return getRoom Id.
+	 */
+	public final Integer getRoomId() {
 		return roomId;
 	}
 
-	public Optional<List<Student>> getStudentList() {
+	/**
+	 * @return studentList.
+	 */
+	public final Optional<List<Student>> getStudentList() {
 		return studentList;
 	}
 
 	private Integer roomId;
 	private Optional<List<Student>> studentList;
 
-	public ClassRoom(Integer roomId, Optional<List<Student>> studentList) {
-		this.roomId = roomId;
-		this.studentList = studentList;
+	/**
+	 * @param roomId of classroom.
+	 * @param list   of student.
+	 */
+	public ClassRoom(final Integer roomIdParameter, final Optional<List<Student>> studentParameter) {
+		this.roomId = roomIdParameter;
+		this.studentList = studentParameter;
 	}
 
 	@Override
 	public String toString() {
 		return roomId + " " + studentList;
 	}
+
 }

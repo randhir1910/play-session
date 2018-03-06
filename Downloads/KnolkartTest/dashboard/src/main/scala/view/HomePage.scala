@@ -15,13 +15,15 @@ object HomePage extends App {
     case Constant.One => val user = new account
       logger.info("Enter name  ")
       val name = readLine()
+      logger.info("Enter username ")
+      val userName = readLine()
       logger.info("Enter address  ")
       val address = readLine()
       logger.info("Enter mobile ")
       val mobile = readLine()
       logger.info("Enter  password ")
       val password = readLine()
-      user.addUser(name, address, mobile, password)
+      user.addUser(name, userName,address, mobile, password)
     case Constant.Two => val user = new account
       logger.info("Enter mobile ")
       val mobile = readLine()

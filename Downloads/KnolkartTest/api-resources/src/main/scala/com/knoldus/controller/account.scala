@@ -8,9 +8,9 @@ class account {
   val userObject: user = new UserData
   val logger = Logger.getLogger(this.getClass)
 
-  def addUser(name: String, address: String, mobile: String, password: String): Unit = {
-    val user = UserInformation(name, address, mobile, password)
-    if (userObject.addUser(user)) {
+  def addUser(name: String, username: String, address: String, mobile: String, password: String): Unit = {
+    val user = UserInformation(name, username, address, mobile, password)
+    if (userObject.addUser(user) != user) {
       // new checkout(user)
     }
     else {
