@@ -9,7 +9,6 @@ import twitter4j.auth.AccessToken;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CompletableFuture;
@@ -23,7 +22,7 @@ public class Twitter {
 	/**
 	 * set twitter instance.
 	 *
-	 * @param  hashTag as Input.
+	 * @param hashTag as Input.
 	 */
 	public Twitter(String hashTag) {
 		Properties properties = new Properties();
@@ -50,7 +49,7 @@ public class Twitter {
 
 	public final CompletableFuture<List<String>> getTweets() {
 		return CompletableFuture.supplyAsync(() -> {
-			List<String> tweets = new LinkedList<>();
+			List<String> tweets = null;
 			try {
 				List<Status> statusList = twitter.search(query).getTweets();
 				tweets = statusList.parallelStream().map(tweetsData -> tweetsData.getText()).collect(Collectors.toList());
@@ -58,37 +57,26 @@ public class Twitter {
 				e.getMessage();
 			}
 			return tweets;
-		}).thenApply(tweets -> {
-			System.out.println(tweets);
-			return tweets;
 		});
 	}
 
 	/**
-	 *
-	 *
 	 * @return no of tweets on the basis of hashTag.
 	 */
 	public final CompletableFuture<Integer> noOfTweets() {
 		return CompletableFuture.supplyAsync(() -> {
 			Integer tweetsCount = Constant.IZERO;
 			try {
-				//System.out.println(twitter.search(query).getTweets());
 				tweetsCount = twitter.search(query).getTweets().size();
 			} catch (TwitterException e) {
 				e.getMessage();
 			}
 			return tweetsCount;
-		}).thenApply(tweetCount -> {
-			System.out.println("total tweets " + tweetCount);
-			return tweetCount;
 		});
 	}
 
 
 	/**
-	 *
-	 *
 	 * @return average tweets per day of seven days from 1 match 2018 to 8 march.
 	 */
 	public final CompletableFuture<Double> averageTweetsPerDay() {
@@ -102,15 +90,10 @@ public class Twitter {
 				e.getMessage();
 			}
 			return averageTweets;
-		}).thenApply(tweetsPerDay -> {
-			System.out.println("average tweets per day " + tweetsPerDay);
-			return tweetsPerDay;
 		});
 	}
 
 	/**
-	 *
-	 *
 	 * @return average likes of tweets.
 	 */
 	public final CompletableFuture<Double> averageLikes() {
@@ -126,15 +109,10 @@ public class Twitter {
 				te.getMessage();
 			}
 			return averageLike;
-		}).thenApply(aveLikes -> {
-			System.out.println("average likes " + aveLikes);
-			return aveLikes;
 		});
 	}
 
 	/**
-	 *
-	 *
 	 * @return average reTweets.
 	 */
 	public final CompletableFuture<Double> averageReTweets() {
@@ -150,9 +128,6 @@ public class Twitter {
 				te.getMessage();
 			}
 			return totalReTweet;
-		}).thenApply(aveReTweets -> {
-			System.out.println("Average reTweets " + aveReTweets);
-			return aveReTweets;
 		});
 	}
 }

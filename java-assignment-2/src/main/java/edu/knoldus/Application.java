@@ -26,11 +26,11 @@ public class Application {
 		System.out.println(StudentOperation.getSubject(Constant.HUNDREDONE, Arrays.asList(classRoom1)));
 
 		Twitter twitter = new Twitter("#cricket");
-		twitter.getTweets();
-		twitter.noOfTweets();
-		twitter.averageTweetsPerDay();
-		twitter.averageLikes();
-		twitter.averageReTweets();
+		twitter.getTweets().thenAccept(tweets -> System.out.println("total tweets " + tweets));
+		twitter.noOfTweets().thenAccept(noOfTweets -> System.out.println("no of tweets " + noOfTweets));
+		twitter.averageTweetsPerDay().thenAccept(averageTweets -> System.out.println("average tweets " + averageTweets));
+		twitter.averageLikes().thenAccept(averageLikes -> System.out.println("average likes " + averageLikes));
+		twitter.averageReTweets().thenAccept(averageReTweets -> System.out.println("average reTweets " + averageReTweets));
 		try {
 			Thread.sleep(Constant.TENTHOUSAND);
 		} catch (InterruptedException ie) {
