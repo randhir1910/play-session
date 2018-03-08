@@ -30,11 +30,6 @@ public class Student {
 	}
 	
 	@Override
-	public int hashCode() {
-		return super.hashCode();
-	}
-	
-	@Override
 	public String toString() {
 		return name + " " + rollNumber + " " + subjectList;
 	}
@@ -52,7 +47,7 @@ public class Student {
 			return false;
 		}
 		final Student other = (Student) object;
-		if ((this.name == null) ? (other.name != null) : !this.name.equals(other.name)) {
+		if (this.name == null ? other.name != null : !this.name.equals(other.name)) {
 			return false;
 		}
 		if (this.getSubjectList() != other.getSubjectList()) {

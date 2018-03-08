@@ -32,6 +32,7 @@ public class Twitter {
 		try {
 			InputStream input = new FileInputStream("/home/knoldus/java-assignment-2/src/main/"
 					+ "resources/config.properties");
+			input.close();
 			properties.load(input);
 			twitter.setOAuthConsumer(properties.getProperty("consumerKey"), properties
 					.getProperty("consumerSecret"));
