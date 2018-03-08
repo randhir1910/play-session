@@ -31,12 +31,12 @@ public class Twitter {
 		Properties properties = new Properties();
 		try {
 			InputStream input = new FileInputStream("/home/knoldus/java-assignment-2/src/main/"
-				+ "resources/config.properties");
+					+ "resources/config.properties");
 			properties.load(input);
 			twitter.setOAuthConsumer(properties.getProperty("consumerKey"), properties
-				.getProperty("consumerSecret"));
+					.getProperty("consumerSecret"));
 			twitter.setOAuthAccessToken(new AccessToken(properties
-				.getProperty("accessToken"), properties.getProperty("accessTokenSecret")));
+					.getProperty("accessToken"), properties.getProperty("accessTokenSecret")));
 			query = new Query(hashTag);
 			query.setSince("2018-03-01");
 			query.setUntil("2018-03-08");
@@ -107,7 +107,7 @@ public class Twitter {
 				List<Status> twitterStatus = twitter.search(query).getTweets();
 				Double twitterSize = twitterStatus.size() + Constant.ZERO;
 				averageLike = twitterStatus.parallelStream().map(tweets -> tweets.getFavoriteCount())
-					.reduce((a, b) -> a + b).get() / twitterSize;
+						.reduce((a, b) -> a + b).get() / twitterSize;
 			} catch (TwitterException te) {
 				te.getMessage();
 			}
@@ -126,7 +126,7 @@ public class Twitter {
 				List<Status> twitterStatus = twitter.search(query).getTweets();
 				Double twitterSize = twitterStatus.size() + Constant.ZERO;
 				totalReTweet = twitterStatus.parallelStream().map(tweets -> tweets.getRetweetCount())
-					.reduce((a, b) -> a + b).get() / twitterSize;
+						.reduce((a, b) -> a + b).get() / twitterSize;
 			} catch (TwitterException te) {
 				te.getMessage();
 			}

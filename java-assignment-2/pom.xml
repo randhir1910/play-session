@@ -125,7 +125,7 @@
                     <failsOnError>false</failsOnError>
                     <linkXRef>false</linkXRef>
                     <failOnViolation>false</failOnViolation>
-                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <includeTestSourceDirectory>false</includeTestSourceDirectory>
                     <configLocation>checkstyle.xml</configLocation>
                     <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
                     <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>

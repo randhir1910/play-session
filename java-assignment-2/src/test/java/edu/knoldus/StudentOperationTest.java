@@ -19,11 +19,10 @@ import static org.junit.Assert.assertEquals;
  */
 public class StudentOperationTest {
 	
-	private static final Student studentSecond = new Student("ravi", Constant.ELEVEN, Optional.ofNullable(null));
 	private static List<String> subject = Arrays.asList("maths", "science", "physics");
 	private static final Student studentFirst = new Student("randhir", Constant.TEN, Optional.of(subject));
+	private static final Student studentSecond = new Student("ravi", Constant.ELEVEN, Optional.ofNullable(null));
 	private static final List<Student> studentsList = Arrays.asList(studentFirst, studentSecond);
-
 	/**
 	 * classRoom reference create.
 	 */
