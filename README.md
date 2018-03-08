@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # KnolcartTest
 scala exam test
 =======
@@ -15,3 +16,6 @@ twitter api,completableFuture
 # java-assignment-2
 completablefuture,twitter api
 >>>>>>> 389a85036c6f540aa711b60101da17ef35ae3c38
+=======
+# java-assignment-01-2
+>>>>>>> 5ef7473b1402a46f147f92f84b40a4031cec4ba1
