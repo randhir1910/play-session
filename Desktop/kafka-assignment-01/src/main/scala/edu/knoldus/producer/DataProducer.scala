@@ -10,17 +10,18 @@ object DataProducer extends App {
   val log = Logger.getLogger(this.getClass)
   val topic = "studentList"
   val studentList = List("randhir", "ravi", "shubham", "vinisha")
+  val mobileList = List(99999999, 88888888, 77777777, 66666666);
   val props = new Properties()
 
   props.put("bootstrap.servers", "localhost:9092")
   props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
-  props.put("value.serializer", "edu.knoldus.serialization.DataSerialization")
+  props.put("value.serializer", "edu.knoldus.serialization.StudentSerialization")
 
   val producer = new KafkaProducer[String, StudentData](props)
 
-  for (index <- 1 to studentList.size) {
+  for (index <- 0 until studentList.size) {
     val key = index.toString
-    val value = StudentData(key, studentList(index))
+    val value = StudentData(key, studentList(index), mobileList(index))
     val record = new ProducerRecord[String, StudentData](topic, key, value)
     producer.send(record)
   }
