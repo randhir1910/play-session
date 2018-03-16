@@ -1,0 +1,14 @@
+@()
+@import helper._
+@main("welcome to play day 3"){
+<form action="" method="post">
+
+    @CSRF.formfield
+
+    <input type="text" name="fname"><br/>
+    <input type="text" name="lname"><br/>
+    <input type="text" name="email"><br/>
+    <input type="submit" value="submit">
+
+</form>
+}

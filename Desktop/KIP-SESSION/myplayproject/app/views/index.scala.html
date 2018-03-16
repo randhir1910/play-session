@@ -1,0 +1,9 @@
+<!--@import play.filters.csrf.CSRF._-->
+<!--@(userForm:Form[Login])(implicit messages:MessagesProvider,request:RequestHeader)-->
+<!--@import helper._-->
+<!--@helper.form(action = routes.HomeController.submit()) {-->
+<!--@CSRF.formField-->
+<!--@helper.inputText(userForm("id"))-->
+<!--@helper.inputText(userForm("email"))-->
+<!--<input type="submit" value="Submit">-->
+<!--}-->
